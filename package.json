@@ -1,11 +1,12 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-35",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "jest tests",
+    "start": "node src/app.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robinwebb71/shipping-service.git"
@@ -19,5 +20,18 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "homepage": "https://github.com/robinwebb71/shipping-service#readme"
+  "homepage": "https://github.com/robinwebb71/shipping-service#readme",
+  "devDependencies": {
+    "nock": "^10.0.6",
+    "sinon": "^7.2.3"
+  },
+
+"engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
+},
+"dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
 }
